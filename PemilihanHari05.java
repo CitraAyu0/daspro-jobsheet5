@@ -1,9 +1,12 @@
 import java.util.Scanner;
+
 public class PemilihanHari05 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String dayName, dayType;
         
+        Scanner sc = new Scanner(System.in);
+
+        String dayName, dayType;
+
         System.out.print("Input day name: ");
         dayName = sc.nextLine();
 
@@ -15,14 +18,13 @@ public class PemilihanHari05 {
             case "friday":
                 dayType = "weekday";
                 break;
-            case "saturday":
-            case "sunday":
+        case "saturday":
+        case "sunday":
                 dayType = "weekend";
                 break;
-            default:
-                dayType = "invalid day name";
-
-        System.out.println(dayName + "is a" + dayType);
-        }
+        default:
+            dayType = "invalid day name";
+    }
+            System.out.println(dayName + " is a " + dayType);
     }
 }
