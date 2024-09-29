@@ -28,6 +28,15 @@ public class PemilihanSwitch05{
             case '/':
                 hasil = angka1 / angka2;
                 break;
+            case ':':
+                if (angka2 != 0) {
+                    hasil = angka1 / angka2;
+                } else {
+                System.out.println("Error: Pembagi tidak boleh nol."); 
+                }
+                break;
+            default:
+            System.out.println("Error: Operator yang dimasukkan tidak valid.");            
         }
 
         System.out.println(angka1 + operator + angka2 + " = " + hasil);
